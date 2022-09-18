@@ -1,0 +1,10 @@
+#sidebar {
+    background-color: rgb(255, 49, 49);
+    width: 250px;
+    height: 100vh;
+    text-align: center;
+}
+
+.nav-item:hover {
+   color: brown;
+}

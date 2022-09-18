@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import LandingPage from './Pages/LandingPages';
+import Home from './Component/Home/Home';
+import Skill from './Component/Skills';
+import Interset from './Component/Interest';
+import Experience from './Component/Experience';
+import Awards from './Component/Awards';
+import About from './Component/Awards'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+          <Route path='/' element={<LandingPage/>}>
+             <Route path='Home' element={<Home/>}/>
+             <Route path='About' element={<About/>}/>
+             <Route path='Skill' element={<Skill/>}/>
+             <Route path='Interest' element={<Interset/>}/>
+             <Route path='Experience' element={<Experience/>}/>
+             <Route path='Awards' element={<Awards/>}/>
+          </Route> 
+      </Routes>
+    </BrowserRouter>
   );
 }
 
