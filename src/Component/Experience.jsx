@@ -1,9 +1,10 @@
 import React from "react"
+import Title from "./Commons/Title"
 
 export default class Experience extends React.Component {
     render() {
         return (
-        <div className="Title fw-bold">Experience</div>
+        <Title value="Experience" />
         )
     }
 }

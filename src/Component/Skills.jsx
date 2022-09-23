@@ -1,11 +1,12 @@
 import React from "react"
+import Title from "./Commons/Title"
 
 export default class Skill extends React.Component {
     render() {
         return (
         <div className="center">
-            <div className="Title fw-bold">Skill</div>
-            <div className="d-flex">
+            <Title value="Skill" />
+            <div className="d-flex ">
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
