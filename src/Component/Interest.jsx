@@ -1,7 +1,10 @@
-export default function Interset () {
-    return (
-        <div>
-            Interest
-        </div>
-    )
+import React from "react"
+
+export default class Interest extends React.Component {
+    render() {
+        return (
+        <div className="Title fw-bold">Interest</div>
+        )
+    }
 }
+

@@ -7,7 +7,7 @@ import Skill from './Component/Skills';
 import Interset from './Component/Interest';
 import Experience from './Component/Experience';
 import Awards from './Component/Awards';
-import About from './Component/Awards'
+import About from './Component/About'
 
 function App() {
   return (
